@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Drew Jezek">
+    <meta name="description" content="Drew Jezek Animation Portfolio">
+    <title>Drew Jezek Animation</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amarante&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="logo for Drew Jezek Animation Portfolio" width="150">
+        <nav>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact-me.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Portfolios</h1>
+        <div class="portfolios">
+            <div class="portfolio-item">
+                <h2>Digital</h2>
+                <p>A collection of digital illustrations</p>
+                <div class="gallery"> 
+                    <img src="images/Mom-small.webp" alt="digital portrait of a mother" loading="lazy" data-full="images/Mom.webp" class="lightbox-thumb">
+                    <img src="images/Morsen-small.webp" alt="digital illustration of a fantasy character with a sword on his arm" loading="lazy"  data-full="images/Morsen.webp" class="lightbox-thumb">
+                    <img src="images/Sara-small.webp" alt="digital illustration of a lady knight attacking with a dragon shield, morningstar, and breathing fire" loading="lazy"  data-full="images/Sara.webp" class="lightbox-thumb">
+                    <img src="images/Self-Caricature-small.webp" alt="digital self-portrait of Drew Jezek" loading="lazy"  data-full="images/Self-Caricature.webp" class="lightbox-thumb">
+                    <img src="images/Knight-small.webp" alt="digital illustration of a knight in armor" loading="lazy"  data-full="images/Knight.webp" class="lightbox-thumb">
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <h2>Illustration</h2>
+                <p>Figure and Gesture drawings in charcoal</p>
+                <div class="gallery">
+                    <img src="images/Illustration1-small.webp" alt="a figure drawing of a girl with her head on her knees" loading="lazy"  data-full="images/Illustration1.webp" class="lightbox-thumb">
+                    <img src="images/Illustration2-small.webp" alt="a figure drawing of a girl sitting" loading="lazy" data-full="images/Illustration2.webp" class="lightbox-thumb">
+                    <img src="images/Illustration3-small.webp" alt="a figure drawing of a boy with his torso turned" loading="lazy" data-full="images/Illustration3.webp" class="lightbox-thumb">
+                    <img src="images/Illustration4-small.webp" alt="a figure drawing of a girl laying down from the back" loading="lazy" data-full="images/Illustration4.webp" class="lightbox-thumb">
+                    <img src="images/Illustration5-small.webp" alt="a figure drawing of another girl laying down from the side" loading="lazy" data-full="images/Illustration5.webp" class="lightbox-thumb">
+                    <img src="images/Illustration6-small.webp" alt="a figure drawing of another girl laying down from the top" loading="lazy" data-full="images/Illustration6.webp" class="lightbox-thumb">
+                    <img src="images/Illustration7-small.webp" alt="a figure drawing of two girls, one from the back" loading="lazy" data-full="images/Illustration7.webp" class="lightbox-thumb">
+                    <img src="images/Illustration8-small.webp" alt="a figure drawing of a girl sitting with one knee raised" loading="lazy" data-full="images/Illustration8.webp" class="lightbox-thumb">
+                    <img src="images/Illustration9-small.webp" alt="a figure drawing of hands" loading="lazy" data-full="images/Illustration9.webp" class="lightbox-thumb">
+                    <img src="images/Illustration10-small.webp" alt="a figure drawing of a girls face" loading="lazy" data-full="images/Illustration10.webp" class="lightbox-thumb">
+                    <img src="images/Illustration11-small.webp" alt="a figure drawing self portrait of Drew Jezek" loading="lazy" data-full="images/Illustration11.webp" class="lightbox-thumb">
+                    <img src="images/Illustration12-small.webp" alt="a figure drawing of a shirt" loading="lazy" data-full="images/Illustration12.webp" class="lightbox-thumb">
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <a class="email" href="mailto:drewjezekart@gmail.com"><img src="images/email.svg" alt="email graphic"></a>
+        <a class="linkedIn-icon" href="https://www.linkedin.com/in/drew-jezek/"><img src="images/linkedinIcon.svg"
+                alt="linkedIn icon"></a>
+        <p class="copywrite">&copy; 2025 Drew Jezek</p>
+    </footer>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="enlarged image">
+    </div>
+</body>
+
+</html>

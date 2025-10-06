@@ -1,0 +1,384 @@
+* {
+    background-color: #161616;
+    color: #d5f3ff;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* -----HEADER----- */
+header {
+    color: #d5f3ff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1001;
+    top: 1rem;
+    /* On top of dropdown */ 
+}
+
+.hamburger span {
+    background: #d5f3ff;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 25px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 50px; 
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    font-size: 200%;
+}
+
+.main-nav a {
+    color: #d5f3ff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+
+/* -----GENERAL FEATUES----- */
+
+
+h1 {
+    font-family: 'Tagesschrift', sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    color: #cf8c33;
+}
+h2 {
+    font-family: 'Tagesschrift', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #d5f3ff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+/* -----HOME PAGE----- */
+
+.home-page {
+    max-width: 98%;
+}
+
+.demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.demo video {
+    max-width: 98%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+}
+
+.info {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    margin: 1.5rem 10%;
+}
+
+.info h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+
+/* -----PORTFOLIO----- */
+
+.portfolios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem 5%;
+}
+
+.portfolio-item {
+    background-color: #1a1a1a;
+    border: 1px solid #d5f3ff;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-item h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: #1a1a1a;
+}
+
+.portfolio-item p {
+    background-color: #1a1a1a;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #d5f3ff;
+    justify-content: center;
+    height:auto;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery img {
+    max-width: 100%;
+    max-height: 250px;
+    aspect-ratio: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1230px) {
+    .portfolios {
+        grid-template-columns: 1fr;
+    }
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid white;
+    box-shadow: 0 0 20px black;
+}
+
+.lightbox .close {
+    position: absolute;
+    background-color: transparent;
+    padding: 0 1rem;
+    top: 30px;
+    right: 40px;
+    font-size: 5rem;
+    color: #d5f3ff;
+    cursor: pointer; }
+
+/* -----CONTACT----- */
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #d5f3ff;;
+}
+
+.form-options label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+.form-options input[type="text"],
+input[type="email"] {
+    margin-bottom: 3rem;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+.form-options textarea {
+    margin-bottom: 3rem;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 10rem;
+    font-size: 1.5rem;
+}
+
+.form-options button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: #161616;
+    background-image: linear-gradient(#cf8c33, #d49d54,#cf8c33, #583c17);
+}
+
+/* -----FOOTER----- */
+
+footer {
+    background-color: #161616;
+    color: #d5f3ff;
+    padding: 1rem 5%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+footer a {
+    text-decoration: none;
+    float: right;
+}
+
+.copywrite {
+    font-size: 0.8rem;
+    color: #d5f3ff;
+    margin: 1rem 2.5rem 1rem 7rem;
+    text-align: center;
+}
+
+
+@media (max-width: 760px) {
+    nav {
+        position: relative;
+        z-index: 10;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 125px;
+        background: none;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    #menu-toggle:checked+.hamburger span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 25px;
+    }
+
+    #menu-toggle:checked+.hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked+.hamburger span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 25px;     
+    }
+
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 100;
+        right: 0;
+        box-sizing: border-box;
+        background-color: #161616;
+        /* match the dark theme */
+        width: 400%;
+        height: auto;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+        border: solid 1px #d5f3ff;
+        margin: 0;
+        z-index: 1000;
+    }
+
+    .main-nav li {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .main-nav a {
+        padding: 1rem 0;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #menu-toggle:checked~.main-nav {
+        display: flex;
+    }     
+
+    .info {
+        grid-template-columns: 1fr;
+        margin: 1.5rem 1%;
+    }
+
+    .about-me {
+        order: 1;
+    }
+
+    .work-history {
+        order: 2;
+    }
+}
