@@ -9,6 +9,7 @@
     <title>Drew Jezek Animation</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,9 +36,7 @@
     <main>
         <h1>Contact Me</h1>
         <div class="contact-form">
-            <form class="form-options" name="contact" method="POST" data-netlify="true" action="thanks.html">
-                <input type="hidden" name="form-name" value="contact" />
-                
+            <form class="form-options" id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
     
@@ -47,7 +46,9 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
     
-                <button type="submit">Send your message</button>
+                <button type="submit" id="submit-btn">Send your message</button>
+                
+                <div id="form-status" style="margin-top: 1rem; padding: 1rem; border-radius: 5px; display: none;"></div>
             </form>
         </div>
     </main>
